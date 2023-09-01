@@ -1,6 +1,6 @@
 const app = require('./app');
 
-const port = process.env.MONGO_PORT
+const port = process.env.APP_PORT
 const dbURL = process.env.MONGO_DB_URL
 
 const mongoose = require('mongoose') 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/loading') %>
+        <%- include('partials/burger-menu') %>
+        <%- include('partials/modals/banks-abm') %>
+
+        <div class="title">
+            <h1>List of banks</h1>
+        </div>
+
+        <div class="button-new">
+            <button id="newBank" class="button-new__button"><i class="fa-solid fa-building-columns icon2"></i>New bank</button>
+        </div>
+            <div id="abm-banks" class="banks">
+                <table>
+                    <tr>
+                        <th>Bank</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td style="color: black; background-color: white;">Name</td>
+                        <td>
+                            <div class="edit-Button">
+
+                            </div>
+                            <div class="delete-Button">
+                                
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <script src='/js/general.js'></script>
+            <script src='/js/alert.js'></script>
+            <script src='/js/banks.js'></script>
+    </body>
+    <%- include('partials/footer') %>
+
+</html>

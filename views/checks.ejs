@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/loading') %>
+            <%- include('partials/burger-menu') %>
+                <%- include('partials/modals/new-check') %>
+                    <%- include('partials/modals/detail-check') %>
+
+                        <div class="calendarContainer">
+
+                            <div id="menu-container" class="menu-container">
+                                <select id="enterprises" name="enterprise" class="menu-container__input" required>
+
+                                </select>
+
+                                <div id="new-check" class="menu-container__newCheck">
+                                    New Check
+                                    <i class="fa-solid fa-money-check-dollar icon2"></i>
+                                </div>
+                            </div>
+
+                            <div id="calendar" class="menu-container__calendar">
+                            </div>
+                        </div>
+
+                        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+                        <script src='/js/general.js'></script>
+                        <script src='/js/alert.js'></script>
+                        <script src='/js/checks.js'></script>
+    </body>
+
+
+    <%- include('partials/footer') %>
+
+</html>

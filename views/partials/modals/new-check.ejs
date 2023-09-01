@@ -1,0 +1,70 @@
+<div id="modal-container" class="modal-container" style="display: none;">
+    <div class="modal">
+        <div id="close-modal" class="close-modal"><i class="fa-solid fa-xmark icon2"></i></div>
+        <form id="from-check" class="form">
+            <div class="modal-title">
+                <h2>New Check</h2>
+            </div>
+
+            <div class="input-container input-container__enterprise">
+                <label class="form__label" for="enterprises-1">Company</label>
+
+                <div class="iconContainer">
+                    <div class="iconContainer__icon">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    
+                    <select id="enterprises-1" name="enterprise" class="form-container__input" required>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container input-container__bank">
+                <label class="form__label" for="banks">Bank</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <select id="banks" name="bank" class="form-container__input" required>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container input-container__createDate">
+                <label class="form__label" for="createDate">Create Date</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-regular fa-calendar-days"></i></div>
+                    <input type="date" name="createDate" id="createDate" class="form-container__input" required>
+                </div>
+            </div>
+
+            <div class="input-container input-container__debitDate">
+                <label class="form__label" for="debitDate">Debit Date</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-regular fa-calendar-days"></i></div>
+                    <input type="date" name="debitDate" id="debitDate" class="form-container__input" required>
+                </div>
+            </div>
+            
+            <div class="input-container input-container__amount">
+                <label class="form__label" for="amount">Amount</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                    <input type="number" step="0.01" name="amount" class="form-container__input" id="amount" required>
+                </div>
+            </div>
+
+            <div class="input-container input-container__note">
+                <label class="form__label" for="note">Note</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-solid fa-note-sticky"></i></i></div>
+                    <textarea name="note" id="note" cols="30" rows="10" class="form-container__area"></textarea>
+                </div>
+            </div>
+
+            <div class="button-save">
+                <button class="button-save__button" type="submit"><i class="fa-regular fa-floppy-disk"></i> Save</button>
+            </div>
+        </form>
+    </div>
+</div>

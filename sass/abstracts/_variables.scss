@@ -1,0 +1,49 @@
+$modalBGcolor: red;
+$modalColor: gray;
+
+//Button
+$ok-button-color: white;
+$ok-button-backColor: green;
+
+$color-background: rgb(255, 255, 255); 
+$color-alert-error: rgb(212, 96, 96) ;
+$color-alert-success: rgb(96, 212, 96) ;
+$color-font-ligth: rgb(236, 227, 227); 
+$color-cancel-btn: rgb(102, 40, 40);
+$color-ok-btn: rgb(41, 128, 59);
+$color-ok-btn-hv: rgb(45, 150, 66);
+
+
+$color-font-menu: rgb(48, 46, 46);
+$color-back-menu: rgb(160, 157, 157);
+
+$shadow0: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow1: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+
+
+/* LOGINS COLORS  */
+
+$boxColor: rgb(61, 60, 58);
+$buttonColor: rgb(43, 150, 39) ;
+
+
+
+@keyframes drop-modal {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes hide-modal {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

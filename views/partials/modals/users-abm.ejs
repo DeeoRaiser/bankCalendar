@@ -1,0 +1,67 @@
+<div id="modal-container" class="modal-container" style="display: none;">
+    <div class="modal">
+        <div id="close-modal-2" class="close-modal"><i class="fa-solid fa-xmark icon2"></i></div>
+        <div class="modal-title">
+            <h2>USERS</h2>
+        </div>
+
+        <form id="form-user" method="post" class="form">
+            <label class="" for="userID" style="display: none;">id</label>
+            <input class="form-container__input" name="userID" id="userID" type="text" style="display: none;" reqired>
+
+
+            <div class="input-container input-container__user">
+                <label class="form__label" for="userName">User Name</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <input class="form-container__input" name="userName" id="userName" type="text" reqired>
+                </div>
+            </div>
+
+            <div id="input-password" class="input-container input-container__user">
+                <label class="form__label" for="password">Password</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <input class="form-container__input" name="password" id="password" type="password" reqired>
+                </div>
+            </div>
+
+            <div id="input-password-2" class="input-container input-container__user">
+                <label class="form__label" for="password2">Repeat Password</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+
+                    <input class="form-container__input" name="password2" id="password2" type="password" reqired>
+                </div>
+            </div>
+
+            <div class="input-container input-container__user">
+                <label class="form__label" for="role">Role</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <select id="role" name="role" class="form-container__input" required>
+                        <option>ADMIN_ROLE</option>
+                        <option>USER_CREATOR</option>
+                        <option>ONLY_WATCH</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="button-save">
+                <button class="button-save__button" type="submit"><i class="fa-regular fa-floppy-disk"></i>Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

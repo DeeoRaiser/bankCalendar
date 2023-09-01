@@ -1,0 +1,17 @@
+@import 'abstracts/reset';
+@import 'abstracts/variables';
+@import 'abstracts/fonts';
+
+
+@import 'pages/index';
+@import 'pages/checks';
+@import 'pages/login';
+
+
+@import 'components/modal.scss';
+@import 'components/cardCheck.scss';
+@import 'components/menuBurger.scss';
+@import 'components/scrollBar.scss';
+@import 'components/spinner.scss';
+@import 'components/alert.scss';
+@import 'components/tables.scss';

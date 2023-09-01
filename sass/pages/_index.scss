@@ -1,0 +1,54 @@
+.calendarContainer{
+    width: 100%;
+    height: 100%;
+
+}
+
+.burger-menu{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+}
+
+#calendar {
+    height: 100%;
+}
+
+@media screen and (min-width: 650px) {
+    .calendarContainer {
+        padding: 0rem 3rem 3rem 3rem;
+    }
+}
+
+.calendar{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+
+
+    &__input{
+        border: none;
+        outline: none;
+        padding: .6rem;
+        width:17rem;
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+    }
+    &__newCheck{
+        cursor: pointer;
+        padding: .6rem;
+        background-color: $ok-button-backColor;
+        width:17rem;
+        text-align: center;
+        border-radius: 0 0 8px 8px ;
+        color: white;
+    }
+}
+

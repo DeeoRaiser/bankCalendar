@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/loading') %>
+        <%- include('partials/burger-menu') %>
+        <%- include('partials/modals/enterprise-abm') %>
+
+        <div class="title">
+            <h1>List of companies</h1>
+        </div>
+
+        <div class="button-new">
+            <button id="newCompany" class="button-new__button"><i class="fa-solid fa-house icon2"></i>New Company</button>
+        </div>
+
+
+            <div id="abm-enterprises" class="enterprises">
+                <table>
+                    <tr>
+                        <th>Companies</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td style="color: black; background-color: white;">Nombre</td>
+                        <td>
+                            <div class="edit-Button">
+
+                            </div>
+                            <div class="delete-Button">
+                                
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <script src='/js/general.js'></script>
+            <script src='/js/alert.js'></script>
+            <script src='/js/enterprise.js'></script>
+    </body>
+
+    <%- include('partials/footer') %>
+
+</html>

@@ -1,0 +1,135 @@
+.title {
+    text-align: center;
+    color: $color-font-menu;
+    margin-bottom: .5rem;
+    border-bottom: solid $color-font-menu 3px;
+    text-transform: uppercase;
+}
+
+.modal-title {
+    text-align: center;
+    color: $color-font-ligth;
+    margin-bottom: .5rem;
+    border-bottom: solid $color-font-ligth 3px;
+    text-transform: uppercase;
+}
+
+.modal-container  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.modal {
+    position: relative;
+    padding: 2rem;
+    background-color: $modalColor;
+    border-radius: 4px;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: row;
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form-container {
+
+    &__input {
+        width: 90%;
+        border-radius: 4px;
+        padding: .3rem;
+        outline: none;
+        border: none;
+    }
+
+    &__area {
+        height: 4rem;
+        border-radius: 4px;
+        padding: .3rem;
+        outline: none;
+        border: none;
+    }
+}
+
+.form {
+    &__label {
+        width: 100%;
+        color: $color-font-ligth;
+        text-align: center;
+        padding: .5rem 0 0 0;
+        margin-bottom: .2rem;
+        text-transform: uppercase;
+    }
+}
+
+.button-save {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    border-radius: 4px;
+
+    &__button {
+        font-size: 1rem;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: $ok-button-color;
+        background-color: $ok-button-backColor;
+    }
+}
+
+.button-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 4px;
+
+    &__button {
+        font-size: 1rem;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: $ok-button-color;
+        background-color: $ok-button-backColor;
+    }
+
+    &__button:hover {
+        box-shadow: $shadow0;
+    }
+
+
+
+}

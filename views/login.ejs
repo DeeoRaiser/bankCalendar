@@ -1,0 +1,32 @@
+<%- include('partials/head') %>
+
+<div class="contenedor">
+    <div class="loginContainer">
+        <form id="loginForm" class="form-login">
+            <div class="loginContainer__loginUser">
+                <label class="loginContainer__label" for="username">Usuario</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-solid fa-user"></i></div>
+                    <input id="username" class="loginContainer__text" type="text" name="username" required>
+                </div>
+            </div>
+            <div class="loginContainer__loginPasword">
+                <label class="loginContainer__label" for="password">Contraseña</label>
+                <div class="iconContainer">
+                    <div class="iconContainer__icon"><i class="fa-solid fa-key"></i></div>
+                    <input id="password" class="loginContainer__text" type="password" name="password" required>
+                    <div id="eye" class="iconContainer__eye" onclick="watchPass()"><i class="fa-solid fa-eye"></i></div>
+                </div>
+            </div>
+            <div class="buttonLogin">
+                <input id="submit" class="buttonLogin__Button" value="Ingresar" type="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src='/js/alert.js'></script>
+<script src='/js/login.js'></script>
+
+<%- include('partials/footer') %>
+

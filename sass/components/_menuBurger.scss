@@ -1,0 +1,42 @@
+.menuBurger-container>div:not(:first-child):not(:last-child){
+    border-bottom: solid 1px $color-font-menu;
+}
+
+
+.menuBurger-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-back-menu;
+
+   
+    &__item{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    &__link{
+        text-align: center;
+        width: 20rem;
+        color: $color-font-menu;
+        margin-bottom: 1rem;
+    }
+}
+
+.burger-menu{
+    cursor: pointer;
+}
+
+.close-menu-burger{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+

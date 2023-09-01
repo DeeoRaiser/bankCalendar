@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.loginContainer{
+    background-color: $boxColor;
+    padding: 2rem;
+    box-shadow: $shadow0;
+    border-radius: 10px;
+
+    &__loginUser{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+    }
+
+    &__loginPasword{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+    }
+
+    &__label{
+        color: $ok-button-color;
+        text-align: center;
+    }
+
+    &__text{
+        padding: .6rem;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+    }
+
+
+}
+
+.iconContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__icon{
+        width: 1rem;
+        height: 1rem;  
+        color: $ok-button-color;
+        margin-right: 1rem;
+    }
+
+    &__eye{
+        display: flex;
+        align-items: center;
+        margin-left: -2rem;
+        color: rgb(92, 86, 86);
+    }
+
+    &__eye:hover{
+        cursor: pointer;
+    }
+}
+
+.eyeOn{
+    color:$buttonColor;
+}
+
+
+.buttonLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+
+    &__Button{
+        padding: 1rem;
+        background-color: $buttonColor;
+        aspect-ratio: 3/1;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: $shadow1;
+        margin-top: .5rem;
+        color: $ok-button-color;
+        border: none;
+    }
+
+    &__Button:hover{
+        cursor: pointer;
+    }
+}

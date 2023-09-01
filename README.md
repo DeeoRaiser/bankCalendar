@@ -17,9 +17,11 @@ Simplify the management of your personal or business finances with "Bank Calenda
 
 
 CONFIGURE YOUR .ENV ====================================================================================================
+
 #JSON WEB TOKEN
 JWT_SECRET: '1A5F8$C7E0B3G6A0G6%A90B6AD4BG0G6$A6F8A7E0B3FD76&A9DC7E1B30B3F6A9'
 #MONGO!!
 MONGO_DB_URL: 'YOUR MONGO URI' #SEE LIKE THIS ====>> 'mongodb+srv://<user>:<pass>@db-1.7of6oi.mongodb.net/checksDates'
 MONGO_PORT: 4001
+
 ========================================================================================================================

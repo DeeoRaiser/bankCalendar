@@ -20,6 +20,15 @@ Additionally, you'll have the ability to configure multiple companies and variou
 Simplify the management of your personal or business finances with "Bank Calendar."
 
 
+# testit in render
+
+https://bankcalendar.onrender.com/
+
+User: test
+
+Pass: test
+
+You can't edit anything; just view
 
 # CONFIGURE YOUR .ENV 
 

@@ -48,3 +48,16 @@ MONGO_DB_URL: 'YOUR MONGO URI' #SEE LIKE THIS ====>> 'mongodb+srv://<user>:<pass
 APP_PORT: 4001
 
 ==========================================================================
+
+# PICS
+![Login](./pics/login.jpg)
+![Cheks](./pics/cheks.jpg)
+![New cheks](./pics/new-check.jpg)
+![Menu](./pics/menu.jpg)
+![Detail Day Checks](./pics/detail-day-bank.jpg)
+
+![ABM Companies](./pics/abm-companies.jpg)
+![ABM Banks](./pics/abm-banks.jpg)
+![ABM New Banks](./pics/abm-banks-new-bank.jpg)
+
+

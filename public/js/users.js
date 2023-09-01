@@ -135,34 +135,45 @@ userSubmit.addEventListener('submit', async (evt) => {
         role: role.value
     }
 
-    console.log(password.value)
 
-    if (edit) {
-        showLoading()
-        let updateUser = await callApiPrivate('/api/update-user', 'post', user)
+    let p = document.getElementById('password')
+    let p2 = document.getElementById('password2')
 
-        if (updateUser.msg) {
-            hideLoading()
-            showAlert(`Success `, `${updateUser.msg}`, "sus")
+    if (p.value === p2.value){
+        if (edit) {
+            showLoading()
+            let updateUser = await callApiPrivate('/api/update-user', 'post', user)
+    
+            if (updateUser.msg) {
+                hideLoading()
+                showAlert(`Success `, `${updateUser.msg}`, "sus")
+            } else {
+                hideLoading()
+                showAlert(`Error `, `${updateUser.response.data.msg}`, "Err")
+            }
+            hideModal()
         } else {
-            hideLoading()
-            showAlert(`Error `, `${updateUser.response.data.msg}`, "Err")
+            showLoading()
+            let newUser = await callApiPrivate('/api/new-user', 'post', user)
+    
+            if (newUser.msg) {
+                hideLoading()
+                showAlert(`Success `, `${newUser.msg}`, "sus")
+            } else {
+                hideLoading()
+                showAlert(`Error `, `${newUser.response.data.msg}`, "Err")
+            }
+            clearNewCheck()
         }
-        hideModal()
-    } else {
-        showLoading()
-        let newUser = await callApiPrivate('/api/new-user', 'post', user)
-
-        if (newUser.msg) {
-            hideLoading()
-            showAlert(`Success `, `${newUser.msg}`, "sus")
-        } else {
-            hideLoading()
-            showAlert(`Error `, `${newUser.response.data.msg}`, "Err")
-        }
-        clearNewCheck()
+        drawTableUsers()
+    }else{
+        showAlert(`Error `, `The entered passwords do not match.`, "Err")
+        p.value = ""
+        p2.value = ""
+        p.focus()
     }
-    drawTableUsers()
+
+    
 
 })
 

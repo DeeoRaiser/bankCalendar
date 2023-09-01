@@ -19,14 +19,11 @@ async function newUser(req, res) {
         }
 
         const passHash = bcrypt.hashSync(pass, saltRounds)
-
         const newUser = new User({
             userName: userName.toLowerCase(),
             pass: passHash,
-            newUser: role
+            role: role
         })
-
-        console.log(newUser)
 
         const savedUser = await newUser.save()
 
